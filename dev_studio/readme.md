@@ -21,7 +21,6 @@
 <div class='container'>
   <h3>My Firts App</h3>
   <p>Это мое первое приложение написанное в DevStudio</p>
-
 </div>
 
 <script>
