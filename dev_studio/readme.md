@@ -12,12 +12,6 @@
   <p>Это мое первое приложение написанное в DevStudio</p>
 </div>
 ```
-<image
-  src="static/screen1.png"
-  alt="Скриншот из DevStudio"
-  caption="Скриншот из DevStudio"
-  align="center">
-
   
 Полностью приложение пишется на языке HTML, в него можно встраивать JS код например:
 ```html
@@ -30,7 +24,7 @@
   <p>Это мое первое приложение написанное в DevStudio</p>
 </div>
 
-<script>
+&lt;script&gt;
   window.addEventListener("DOMContentLoaded", ()=>{
     document.querySelector("p").innerHTML = "Изменено с помощью JavaScript"
     document.querySelector("p").style.background = "rgb(0, 122, 255)";
@@ -43,5 +37,5 @@
       alert("hello, world!")
     }
   })
-</script>
+&lt;/script&gt;
 ```
