@@ -1,0 +1,117 @@
+.CodeMirror {
+  position: absolute;
+  width: calc(100vw - (90vh / 1328 * 647) - 50px - 20px);
+  left: 24px;
+  top: 24px;
+  height: calc(100vh - 50px) !important;
+  border: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-family: monospace !important;
+}
+.preview {
+  position: absolute;
+  width: calc(90vh / 2656 * 1294);
+  height: 90vh;
+  right: 10px;
+  top: 5vh;
+}
+.preview iframe {
+  width: calc(100% / 433 * 394);
+  height: calc(90vh / 888 * 770);
+  top: calc(90vh / 888 * 67);
+  position: absolute;
+  background: white;
+  left: calc(100% / 433 * 19);
+  transition: 0.5s;
+}
+
+.preview .iphone {
+  background: url(iphone15.svg) no-repeat;
+  background-size: 100%;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+}
+.preview.dark .iphone {
+  background: url(iphone15_dark.svg) no-repeat;
+  background-size: 100%;
+  content: "";
+  transition: 0.5s;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: rgb(28, 28, 30);
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 3px;
+  border: 6px solid rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 20px;
+  -webkit-box-shadow: inset -1px -1px 0px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 0px rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+.buttonCopy {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  user-select: none;
+}
+@font-face {
+  font-family: sf;
+  src: url(sf.otf);
+}
+.changeTheme {
+  position: absolute;
+  bottom: 27px;
+  left: 74px;
+  width: 50px;
+  border-radius: 10px;
+  height: 50px;
+  user-select: none;
+  font-family: sf;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.changeTheme.light {
+  background: rgba(255, 255, 255, 1)
+}
+.changeTheme.dark {
+  background: rgb(28, 28, 30);
+  color: white
+}
