@@ -4,7 +4,18 @@
 Для написания приложения должен быть стартовый шаблон:
 ```html
 <div class='header'>
-  <div class='button-back'>􀆉 Назад</div>
+  <div class='button-back' onclick='closeApp()'>􀆉 Назад</div>
+  <div class='app-name'>My First App</div>
+</div>
+<div class='container'>
+  <h3>My Firts App</h3>
+  <p>Это мое первое приложение написанное в DevStudio</p>
+</div>
+```
+Полностью приложение пишется на языке HTML, в него можно встраивать JS код например:
+```html
+<div class='header'>
+  <div class='button-back' onclick='closeApp()'>􀆉 Назад</div>
   <div class='app-name'>My First App</div>
 </div>
 <div class='container'>
@@ -12,4 +23,19 @@
   <p>Это мое первое приложение написанное в DevStudio</p>
 
 </div>
+
+<script>
+  window.addEventListener("DOMContentLoaded", ()=>{
+    document.querySelector("p").innerHTML = "Изменено с помощью JavaScript"
+    document.querySelector("p").style.background = "rgb(0, 122, 255)";
+    document.querySelector("p").style.color = "white";
+    document.querySelector("p").style.padding = "20px";
+    document.querySelector("p").style.borderRadius = "10px";
+    document.querySelector("p").style.cursor = "pointer"
+    document.querySelector("p").style.textAlign = "center";
+  	document.querySelector("p").onclick = () => {
+      alert("hello, world!")
+    }
+  })
+</script>
 ```
