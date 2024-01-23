@@ -17,6 +17,8 @@
   alt="Скриншот из DevStudio"
   caption="Скриншот из DevStudio"
   align="center">
+
+  
 Полностью приложение пишется на языке HTML, в него можно встраивать JS код например:
 ```html
 <div class='header'>
