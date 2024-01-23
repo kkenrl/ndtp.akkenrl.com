@@ -12,7 +12,10 @@
   <p>Это мое первое приложение написанное в DevStudio</p>
 </div>
 ```
-![Отображение как это выглядит](static/screen1.png)
+<image
+  src="static/screen1.png"
+  alt="Скриншот из DevStudio"
+  caption="Скриншот из DevStudio">
 Полностью приложение пишется на языке HTML, в него можно встраивать JS код например:
 ```html
 <div class='header'>
